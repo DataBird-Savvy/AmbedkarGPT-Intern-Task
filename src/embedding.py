@@ -4,15 +4,14 @@ from logger import logger
 from exception import RAGException
 import os
 import sys
-import traceback
+import config
 
-load_dotenv()
 
 
 class HuggingFaceEmbeddingsLoader:
     def __init__(self):
         
-        self.model_name = os.getenv("EMBEDDING_MODEL")
+        self.model_name = config.EMBEDDING_MODEL
         
         
 
@@ -25,6 +24,10 @@ class HuggingFaceEmbeddingsLoader:
             return hf_embeddings 
         except Exception as e:
             raise RAGException(e, sys) from e
+        
+    
+        
 if __name__ == "__main__":
+    
     hf_loader = HuggingFaceEmbeddingsLoader()
     hf_embeddings = hf_loader.load_hf_embeddings()

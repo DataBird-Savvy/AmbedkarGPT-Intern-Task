@@ -6,6 +6,6 @@ EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 OLLAMA_MODEL_NAME = "mistral"
 COLLECTION_NAME = "ambedkarspeech"
 ALPHA = 0.5
-COHERE_RERANK_MODEL = "rerank-english-v2.0"
+COHERE_RERANK_MODEL = "rerank-english-v3.0"
 K=3
 VECTOR_K=4

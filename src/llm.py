@@ -43,7 +43,8 @@ class LLM:
 
         except Exception as e:
             logger.error(f"Error calling Ollama: {e}")
-            raise RAGException(f"Ollama request failed: {str(e)}")
+            raise RAGException("Ollama request failed", str(e))
+
 
 if __name__ == "__main__":
     llm = LLM()

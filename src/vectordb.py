@@ -50,4 +50,4 @@ if __name__ == "__main__":
     embeddings = HuggingFaceEmbeddingsLoader().load_hf_embeddings()
     chunks= DocumentProcessor().process(config.SPEECH_FILE)
     vectordb = VectorDB(chunks=chunks, embeddings=embeddings)
-    vectordb.build_or_load_vectorstore()
+    db=vectordb.build_or_load_vectorstore()

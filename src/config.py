@@ -9,3 +9,5 @@ ALPHA = 0.5
 COHERE_RERANK_MODEL = "rerank-english-v3.0"
 K=3
 VECTOR_K=4
+LLM_MODEL="mistral"
+OLLAMA_URL="http://localhost:11434"

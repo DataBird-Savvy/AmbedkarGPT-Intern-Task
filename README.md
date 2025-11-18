@@ -1,12 +1,12 @@
 # AmbedkarGPT-Intern-Task
-# 📘 AmbedkarGPT – RAG-based CLI Q&A System
+#  AmbedkarGPT – RAG-based CLI Q&A System
 
 A command-line Question–Answering system built using Retrieval-Augmented Generation (RAG) on Dr. B.R. Ambedkar’s speech.  
 You ask a question → system retrieves relevant text → Mistral LLM generates an answer.
 
 ---
 
-## 🚀 Features
+## Features
 
 - Command-line interface for Q&A  
 - Loads speech from a text file  
@@ -18,14 +18,14 @@ You ask a question → system retrieves relevant text → Mistral LLM generates 
 
 ---
 
-## 🗂️ Project Architecture
+## Project Architecture
 
 
 
 ![alt text](image.png)
 
 
-## 📁 Project Structure (with explanations)
+## Project Structure (with explanations)
 
 
 ```bash
@@ -53,7 +53,7 @@ src/
 └── vectordb.py               # ChromaDB initialization, insert & load operations
 ```
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 | Category | Technology | Purpose |
 |----------|------------|---------|

@@ -28,7 +28,7 @@ You ask a question → system retrieves relevant text → Mistral LLM generates 
 ## 📁 Project Structure (with explanations)
 
 
-
+```bash
 src/
 ├── __init__.py               # Marks folder as a Python package
 │
@@ -51,7 +51,7 @@ src/
 ├── retriever.py              # Vector search + BM25 search + ensemble merge logic
 │
 └── vectordb.py               # ChromaDB initialization, insert & load operations
-
+```
 
 ## 🛠️ Technologies Used
 

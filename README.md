@@ -87,6 +87,25 @@ conda create ./env python=3.12
 conda activate ./env
 pip install -r requirements.txt
 ```
+### Configuration Variables
+```bash
+| Variable Name         | Value / Example                          | Description                                 |
+| --------------------- | ---------------------------------------- | ------------------------------------------- |
+| `SPEECH_FILE`         | `data/speech.txt`                        | Path to the Ambedkar speech text file       |
+| `CHROMA_DIR`          | `chroma_db`                              | Directory where Chroma vector DB is stored  |
+| `CHUNK_SIZE`          | `350`                                    | Size of each text chunk for embedding       |
+| `CHUNK_OVERLAP`       | `50`                                     | Overlap between consecutive chunks          |
+| `EMBEDDING_MODEL`     | `sentence-transformers/all-MiniLM-L6-v2` | Embedding model used for text vectorization |
+| `OLLAMA_MODEL_NAME`   | `mistral`                                | LLM model served locally by Ollama          |
+| `COLLECTION_NAME`     | `ambedkarspeech`                         | Name of the Chroma collection               |
+| `ALPHA`               | `0.5`                                    | Hybrid search blending weight               |
+| `COHERE_RERANK_MODEL` | `rerank-english-v3.0`                    | Optional Cohere model used for re-ranking   |
+| `K`                   | `3`                                      | Number of re-ranked results to retrieve     |
+| `VECTOR_K`            | `4`                                      | Number of vector search results             |
+| `LLM_MODEL`           | `mistral`                                | LLM name for inference                      |
+| `OLLAMA_URL`          | `http://localhost:11434`                 | Local Ollama server endpoint                |
+```
+
 ### Start the Mistral Model (via Ollama)
 ```bash
 ollama run mistral

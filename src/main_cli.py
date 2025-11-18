@@ -4,21 +4,21 @@ from logger import logger
 from vectordb import VectorDB
 from retriever import Retriever
 
+
+# This function initializes the CLI, retrieves context using the RAG pipeline, 
+# generates the answer, and prints the final output.
 def main():
     
-    db = VectorDB().build_or_load_vectorstore()
-    retriever = Retriever(db)
-    query = "According to the passage, why is abolishing caste linked to rejecting the sanctity of the shastras?"
+    rag = RAGPipeline()
     
     parser = argparse.ArgumentParser(description="AmbedkarGPT CLI")
     parser.add_argument("--query", "-q", required=True, help="Your question")
 
     args = parser.parse_args()
     query = args.query
-    results = retriever.retrieve(query)
-    rag = RAGPipeline(results)
     
-   
+    rag.process_context(query)
+         
 
     try:
         answer = rag.ask(query)

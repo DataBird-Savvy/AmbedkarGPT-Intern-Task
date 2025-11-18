@@ -30,7 +30,7 @@ class LLM:
             response = requests.post(
                 f"{self.base_url}/api/generate",
                 json=payload,
-                timeout=80
+                timeout=180
             )
 
             if response.status_code != 200:

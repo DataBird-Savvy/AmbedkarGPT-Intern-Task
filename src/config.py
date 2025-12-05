@@ -11,3 +11,6 @@ K=3
 VECTOR_K=4
 LLM_MODEL="mistral"
 OLLAMA_URL="http://localhost:11434"
+NEO4J_URI='neo4j+s://e0e562ea.databases.neo4j.io'
+NEO4J_USER="neo4j"
+NEO4J_PASS="VFOdD6KTSpkrU_KzA-VS7cScTGIV5-yB7HR5qe3OyGs"

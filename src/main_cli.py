@@ -1,8 +1,7 @@
 import argparse
 from rag_pipeline import RAGPipeline
 from logger import logger
-from vectordb import VectorDB
-from retriever import Retriever
+
 
 
 # This function initializes the CLI, retrieves context using the RAG pipeline, 

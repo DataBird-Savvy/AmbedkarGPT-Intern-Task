@@ -60,7 +60,7 @@ src/
 | Programming Language | **Python 3.12+** | Core implementation of CLI & RAG pipeline |
 | Vector Database | **ChromaDB** | Stores embeddings & enables vector similarity search |
 | Embeddings | **Sentence-Transformers** | Converts text chunks into dense vectors |
-| Retrieval | **Chroma Vector Search**, **BM25 (LangChain)** | Hybrid retrieval (semantic + keyword) |
+| Retrieval | **Chroma Vector Search**, **BM25 (LangChain)**,**Neo4j**  | Hybrid retrieval (semantic + keyword+knowledge graph) |
 | Reranking | **Cohere Rerank API** | Improves document relevance ranking |
 | LLM (Local) | **Ollama + Mistral** | Local inference for RAG; no API usage |
 | Orchestration | **LangChain** | Handles Documents, Retrievers, LLM connections |

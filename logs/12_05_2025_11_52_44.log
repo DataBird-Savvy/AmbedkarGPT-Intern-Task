@@ -1,0 +1,26 @@
+[ 2025-12-05 11:55:28,832 ] [INFO] logger:16 - Processing context for RAG Pipeline...
+[ 2025-12-05 11:55:28,850 ] [INFO] logger:19 - [INFO] Creating/loading Chroma DB at: D:\EDrivebackup\brocamp\techTest\AmbedkarGPT_Intern_Task\chroma_db
+[ 2025-12-05 11:55:29,450 ] [INFO] chromadb.telemetry.product.posthog:22 - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[ 2025-12-05 11:55:32,124 ] [INFO] logger:37 - [INFO] Chroma vectorstore is ready at: D:\EDrivebackup\brocamp\techTest\AmbedkarGPT_Intern_Task\chroma_db
+[ 2025-12-05 11:55:32,124 ] [INFO] logger:26 - Retrieving relevant documents from vector database.
+[ 2025-12-05 11:55:38,924 ] [INFO] logger:31 - Retrieved 3 docs from vector search.
+[ 2025-12-05 11:55:39,193 ] [INFO] logger:38 - BM25Retriever reranking applied based on query.
+[ 2025-12-05 11:55:42,091 ] [INFO] httpx:1025 - HTTP Request: POST https://api.cohere.com/v2/rerank "HTTP/1.1 200 OK"
+[ 2025-12-05 11:55:42,178 ] [INFO] logger:60 - Final documents ranked and ready for use.
+----------------------------------------------------------------------------------------------------
+Document 1:
+
+The real remedy is to destroy the belief in the sanctity of the shastras. How do you expect to succeed if you allow the shastras to continue to be
+held as sacred and infallible? You must take a stand against the scriptures. Either you must stop the practice of caste or you must stop believing
+----------------------------------------------------------------------------------------------------
+Document 2:
+
+in the shastras. You cannot have both. The problem of caste is not a problem of social reform. It is a problem of overthrowing the authority of the
+shastras. So long as people believe in the sanctity of the shastras, they will never be able to get rid of caste. The work of social reform is like the
+----------------------------------------------------------------------------------------------------
+Document 3:
+
+work of a gardener who is constantly pruning the leaves and branches of a tree without ever attacking the roots. The real enemy is the belief in the
+shastras.
+[ 2025-12-05 11:55:42,196 ] [INFO] logger:40 - Calling LLM for answer...
+[ 2025-12-05 11:55:42,196 ] [INFO] logger:22 - Sending request to Ollama model: mistral

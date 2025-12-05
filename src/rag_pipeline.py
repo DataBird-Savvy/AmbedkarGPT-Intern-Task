@@ -16,7 +16,7 @@ class RAGPipeline:
         logger.info("Processing context for RAG Pipeline...")
         db = VectorDB().build_or_load_vectorstore()
         retriever = Retriever(db)
-        retriever.retrieve(query)
+        self.context = retriever.retrieve(query)
         
     
     # Generates an answer using the LLM with the retrieved context.

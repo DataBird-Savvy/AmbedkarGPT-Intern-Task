@@ -6,10 +6,10 @@ from exception import RAGException
 
 
 class VectorDB:
-    def __init__(self,chunks=None, embeddings=None):
+    def __init__(self, embeddings=None):
         self.persist_directory = config.CHROMA_DIR
         self.vectordb = None
-        self.chunks = chunks
+        self.chunks = config.CHUNK_SIZE
         self.embeddings = embeddings
 
     def build_or_load_vectorstore(self):
